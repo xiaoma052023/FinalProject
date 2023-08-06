@@ -1,0 +1,3 @@
+LCLid - individual household unique identifier - (str)
+Date - date of recorded measurement - (date)
+KWH - energy consumption measurement in kWh - (float)
