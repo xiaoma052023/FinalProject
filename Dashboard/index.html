@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WeatherForcasting</title>
+	
+    <!--Library Styles-->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/font-awesome.css" rel="stylesheet">
+    <link href="css/lib/nivo-lightbox.css" rel="stylesheet">
+    <link href="css/lib/nivo-themes/default/default.css" rel="stylesheet">
+	
+    <!-- Template styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/scheme/purple.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+	
+    <div id="main-wrapper">
+        
+        <!-- Site Navigation -->
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a class="sscroll" href="index.html#home" style="padding-top: 50px; padding-bottom: 30px; font-weight: 700; font-size: 20px">Home</a></li>
+                      <li><a class="sscroll" href="index.html#services">Dataset</a></li>
+						<li><a class="sscroll" href="index.html#contact">Algorithm</a></li>
+						<li><a class="sscroll" style="letter-spacing: 0px; padding-right: 0px; margin-left: 16px; padding-top: 0px; padding-bottom: 10px" href="RequestsAndOrganizations.html" >Machine Learning </a></li>
+						<li><a class="sscroll" href="ActionsAndDomains.html" style="letter-spacing: 0px; padding-right: 0px; margin-left: 16px;  padding-top: 0px; padding-bottom: 0px">Neural Network</a></li>
+						
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+        
+        <div id="container">
+            <!-- BEGIN HOME -->
+            <section id="home" class="home">
+                <div id="home-slide">
+                        <li>
+                            <div class="slide-text">
+                                <h2 style="color: #000000">Weather Forecasting</h2>
+                                <h3 style="color:mediumpurple; width: 1080px; padding-right: 0; margin-left: -145px; margin-top: 80px; margin-bottom: -30px; line-height: 50px; font-weight: 500">Comparative Analysis of Machine Learning and Deep Learning Algorithms for Weather Forecasting</h3>
+                                <br/> 
+                            </div>
+                            <img src="images/slider/slide-3.bmp" class="par" alt="first">
+						</li>
+                </div>
+            </section>
+            <!-- END HOME -->
+			
+			<!-- BEGIN SERVICES -->
+            <section id="services" class="services">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+							<h2>Exploration of the Dataset</h2>
+							<div style="height: 25px"></div>
+							<h4>This section will introduce the dataset used to compare the different algorithms. The dataset contains the data about the weather from Jan 1st,1979 to Dec 31th,2020 and contains date, mean_temp, max_temp, min_temp, precipitation, pressure, sunshine, global_radiation, cloud_cover, snow_depth, 10features</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="service">
+                                    <div class="icon-holder">
+                                       <a href="RequestsAndOrganizations.html"> <i class="fa fa-paper-plane"></i></a>
+                                    </div>
+                                    <h3 class="heading">About the dataset</h3>
+                                    <p class="description">In this part, I will mainly show the changes of mean temperature and precipitation in the dataset</p>
+								</div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </section>
+            <!-- END SERVICES -->
+            
+            <!-- BEGIN SERVICES -->
+            <section id="services" class="services">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+							<h2>Comparison Between Different Algorithms</h2>
+							<div style="height: 25px"></div>
+							<h4>This section shows the performance of machine learning algorithms and deep learning algorithms in predicting the temperature and precipitation, including Linear Regression, Support Vector Machines, Random Forest, LSTM and LSTM with Attention</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="service">
+                                    <div class="icon-holder">
+                                       <a href="RequestsAndOrganizations.html"> <i class="fa fa-paper-plane"></i></a>
+                                    </div>
+                                    <h3 class="heading">Machine Learning</h3>
+                                    <p class="description">This section contains the performance of Linear Regression, SVM and Random Forest.</p>
+								</div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="service">
+                                    <div class="icon-holder">
+                                        <a href="ActionsAndDomains.html"><i class="fa fa-diamond"></i></a>
+                                    </div>
+                                    <h3 class="heading">Neural Network</h3>
+                                    <p class="description">This section contains the performance of LSTM and Attention machinism</p>
+								</div>
+							</div>
+                        </div>
+                    </div>                   
+                </div>
+            </section>
+            <!-- END SERVICES -->
+            
+            <!-- BEGIN FOOTER -->
+            <footer>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright &copy; 2023. Comparative Analysis of Machine Learning and Deep Learning Algorithms for Weather Forecasting.</p>                        
+                    </div>
+                </div>
+            </footer>
+            <!-- END FOOTER -->
+        </div>
+    </div>
+
+    <!-- Back to top -->
+    <div id="backtotop">       
+        <a class="to-top-btn sscroll" href="index.html#home"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+
+    <!-- Library Scripts -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/lib/jquery.preloader.js"></script>
+    <script src="js/lib/nivo-lightbox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lib/jquery.superslides.min.js"></script>
+    <script src="js/lib/smoothscroll.js"></script>
+    <script src="js/lib/jquery.sudoslider.min.js"></script>
+    <script src="js/lib/jquery.bxslider.min.js"></script>
+    <script src="js/lib/jquery.mixitup.min.js"></script>
+    <script src="js/lib/jquery.backtotop.js"></script>
+    <script src="js/lib/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script src="js/lib/retina.min.js"></script>
+
+    <!-- Custom Script -->    
+    <script src="js/main.js"></script>
+	<script>   
+		function saveText()  { 
+		  var strHTML1= document.getElementById("wenben1").value;//获取内容
+		  var strHTML2= document.getElementById("wenben2").value;
+		  var strHTML3= document.getElementById("wenben3").value;
+		  var strHTML4= document.getElementById("wenben4").value;//获取内容
+		  var strHTML5= document.getElementById("wenben5").value;
+		  var strHTML6= document.getElementById("wenben6").value;
+
+		  var winSave=window.open();  
+		  winSave.document.open("text","gb2312");  
+		  winSave.document.write(strHTML1+","+strHTML2+","+strHTML3+","+strHTML4+","+strHTML5+","+strHTML6);  
+		  winSave.document.execCommand("SaveAs",true,"newfile.txt");
+		  window.location.href="#"  ;
+		  winSave.close();   
+		}   
+	</script>
+</body>
+
+</html>

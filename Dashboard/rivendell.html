@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+	
+    <!--Library Styles-->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/font-awesome.css" rel="stylesheet">
+    <link href="css/lib/nivo-lightbox.css" rel="stylesheet">
+    <link href="css/lib/nivo-themes/default/default.css" rel="stylesheet">
+	
+    <!-- Template styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/scheme/purple.css" rel="stylesheet">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/rem.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/rivendell.js"></script>
+</head>
+
+<body data-spy="scroll">
+
+    <div id="main-wrapper">
+        
+        <!-- Site Navigation -->
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html#">
+                        <img src="images/logo.bmp" width="120">
+                    </a>
+                </div>
+
+                 <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="sscroll" href="index.html#home">Home</a></li>
+                        <li><a class="sscroll" href="index.html#services">Services</a></li>
+						<li><a class="sscroll" href="RequestsAndOrganizations.html" style="letter-spacing: 0px; padding-right: 0px; margin-left: 16px; padding-top: 0px; padding-bottom: 10px">Requests &amp; Organizations</a></li>
+						<li><a class="sscroll" href="ActionsAndDomains.html" style="letter-spacing: 0px; padding-right: 0px; margin-left: 16px;  padding-top: 0px; padding-bottom: 0px">Actions &amp; Domains</a></li>
+                        <li><a class="sscroll" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+        
+        <div id="container">
+            <!-- BEGIN SERVICES -->
+            <section id="services" class="services">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+							<h2 style="font-weight: 400">Reporting Organization</h2>
+							<div style="height: 25px"></div>
+							<h5 style="line-height: 20px">In this section, we mainly focus on the reporting organization. Here, we will provide the information about the request changing curve and the actions that the Google took for the specific organization.</h5>
+							<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 40px; border-color:lightgray">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6 col-xs-12">
+								<h2 style="font-weight: 300; padding-bottom: 20px">Rivendell</h2>
+							</div>
+							
+							<div class="col-md-12 col-sm-6 col-xs-12">
+								<h3>* Details of the organization making the report</h3>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 170px">
+								<h5 style="line-height: 20px">The reporter sent us 301,038 individual requests, asking us to remove 592,224,019 URLs from Google search results.</h5>
+							</div>
+							
+							<div class="col-md-12 col-sm-6 col-xs-12">
+								<h3>* Changes in the number of requests in 2019</h3>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 170px">
+								<h5 style="line-height: 20px">WRivendell is the number one organization in terms of shipping volume.<br/><br/>The following figure shows the change curve of the number of requests sent by the Rivendell organization in 2019 over time. <br/><br/>* Drag the timeline to zoom the image. </h5>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" id="chart_1" style="height: 300px"></div>
+							
+							<div class="col-md-12 col-sm-6 col-xs-12" style="padding-top: 140px">
+								<h3>* The result of the organization that made the report</h3>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12" style="height: 300px">
+								<h5 style="line-height: 20px; margin-top: 35px; margin-right: 20px; margin-left: 10px">This chart shows the results of each URL that the reporter has submitted. </h5>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12" id="chart_2" style="height: 500px"></div>
+                        </div>
+						<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 40px; border-color: lightgray">
+                    </div>
+				</div>
+            </section>
+            <!-- END SERVICES -->
+            <!-- BEGIN CONTACT -->
+            <section id="contact" class="contact gray">
+                <div class="row">
+                    <div class="col-md-12 mg-bt-80">
+                        <div class="header-content">
+                            <h2>Contact Us</h2>
+                            <h3>Your can either email us or submit the form below</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="address">
+                            <h2>Get in touch</h2>
+                            <p>Contact us if you find something wrong in the whole website or if you have some advice to help with the improvement of the website</p>
+                            <h2>Team Office</h2>
+                            <ul class="office">
+                                <li><i class="fa fa-map-marker"></i> <strong>Address:</strong> 10 Xitucheng Road, Beijing, China</li>
+                                <li><i class="fa fa-phone"></i> <strong>Phone:</strong> (080) 456-7890</li>
+                                <li><i class="fa fa-envelope"></i> <strong>Email:</strong> 
+									<a href="mailto:2017213040@bupt.edu.cn" style="color:#000000">2017213040@bupt.edu.cn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+					<div class="col-sm-6 col-md-6">
+                        <form id="contact-form" role="form">                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="wenben1" placeholder="Rationality of layout (1-5 marks)">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="wenben2" placeholder="Availability (1-5 marks)">     
+							</div>
+							<div class="form-group">
+                                <input class="form-control" id="wenben3" placeholder="Data intuitiveness (1-5 marks)">     
+							</div>
+							<div class="form-group">
+                                <input class="form-control" id="wenben4" placeholder="Ease of use (1-5 marks)">     
+							</div>
+							<div class="form-group">
+                                <input class="form-control" id="wenben5" placeholder="Interactivity (1-5 marks)">     
+							</div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="wenben6" rows="5" placeholder="Your suggestions"></textarea>
+                            </div>
+                            <br/>
+                            <button type="submit" class="btn" onClick="saveText()">Save</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- END CONTACT -->
+            <!-- BEGIN FOOTER -->
+            <footer>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social">
+                            <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                            <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                            <a href="javascript:;"><i class="fa fa-pinterest"></i></a>
+                            <a href="javascript:;"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                        <p>Copyright &copy; 2021. Analysing the Google Transparency Report.</p>                        
+                    </div>
+                </div>
+            </footer>
+            <!-- END FOOTER -->
+        </div>
+    </div>
+	
+    <!-- Back to top -->
+    <div id="backtotop">       
+        <a class="to-top-btn sscroll" href="index.html#home"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+
+	<script>   
+		function saveText()  { 
+		  var strHTML1= document.getElementById("wenben1").value;//获取内容
+		  var strHTML2= document.getElementById("wenben2").value;
+		  var strHTML3= document.getElementById("wenben3").value;
+		  var strHTML4= document.getElementById("wenben4").value;//获取内容
+		  var strHTML5= document.getElementById("wenben5").value;
+		  var strHTML6= document.getElementById("wenben6").value;
+
+		  var winSave=window.open();  
+		  winSave.document.open("text","gb2312");  
+		  winSave.document.write(strHTML1+","+strHTML2+","+strHTML3+","+strHTML4+","+strHTML5+","+strHTML6);  
+		  winSave.document.execCommand("SaveAs",true,"newfile.txt");
+		  window.location.href="#"  ;
+		  winSave.close();   
+		}   
+	</script>
+</body>
+
+</html>
