@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+	
+    <!--Library Styles-->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/font-awesome.css" rel="stylesheet">
+    <link href="css/lib/nivo-lightbox.css" rel="stylesheet">
+    <link href="css/lib/nivo-themes/default/default.css" rel="stylesheet">
+	
+    <!-- Template styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/scheme/purple.css" rel="stylesheet">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/rem.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/RandomForest.js"></script>
+</head>
+
+<body data-spy="scroll">
+
+    <div id="main-wrapper">
+        
+        <!-- Site Navigation -->
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a class="sscroll" href="MainPage.html#home" style="padding-top: 50px; padding-bottom: 30px; font-weight: 700; font-size: 20px">Home</a></li>
+                      <li><a class="sscroll" href="MainPage.html">Dataset</a></li>
+						<li><a class="sscroll" href="MainPage.html#services">Algorithm</a></li>
+						<li><a class="sscroll" style="letter-spacing: 0px; padding-right: 0px; margin-left: 16px; padding-top: 0px; padding-bottom: 10px" href="MainPage.html#services" >Machine Learning </a></li>
+						<li><a class="sscroll" href="ActionsAndDomains.html" style="letter-spacing: 0px; padding-right: 0px; margin-left: 16px;  padding-top: 0px; padding-bottom: 0px">Neural Network</a></li>
+						
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+        
+        <div id="container">
+            <!-- BEGIN SERVICES -->
+            <section id="services" class="services">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+							<h2 style="font-weight: 400">Random Forest</h2>
+							<div style="height: 25px"></div>
+							<h5 style="line-height: 20px">This section shows the performance of the random forest algorithm in predicting temperature and precipitation. The metric used to evaluate the model is mean squared error. By comparing with the baseline model, it can be found that the training effect of this model is better than the baseline model, but the model performance has not been improved well.</h5>
+							<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 40px; border-color:lightgray">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+							<div class="col-md-12 col-sm-6 col-xs-12">
+								<h3>* Mean squared error of prediction</h3>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 170px">
+								<h5 style="line-height: 20px">The mean squared error of mean_temp prediction of random forest model is <strong>15.472</strong>. Compared with the <strong>16.697</strong> predicted by the baseline model, the prediction performance is slightly better. The predicted values of the two models differ only by 2<br><br>The mean squared error of precipitation prediction of random forest model is <strong>11.429</strong>. Compared with the <strong>11.626</strong> predicted by the baseline model, the prediction performance is slightly better. The predicted values of the two models differ only by 1</h5>
+							</div>
+							
+												<div class="col-md-12">
+                        <div class="row">
+							<div class="col-md-12 col-sm-6 col-xs-12" style="margin-top: 50px">
+								<h3>* Mean_temp Forecast for 2020</h3>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 150px">
+								<h5 style="line-height: 20px">The picture below is the comparison between the predicted value and the actual value of mean_temp in 2020 using randome forest model.<br/><br/>As can be seen from the image, the fitting effect between the model predicted value and the real value is not very good. It can only predict the approximate trend of temperature. Its performance is quite similar with baseline model.</h5>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" id="rf_mean_temp" style="height:350px"></div>
+                        </div>
+						<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 40px; border-color: lightgray">
+                    </div>
+							
+							<div class="col-md-12">
+                        <div class="row">
+							<div class="col-md-12 col-sm-6 col-xs-12" style="margin-top: 50px">
+								<h3>* Precipitation Forecast in 2020</h3>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 150px">
+								<h5 style="line-height: 20px">The picture below is the comparison between the predicted value and the actual value of precipitation in 2020 using random forest model.<br/><br/>As can be seen from the image, the fitting effect between the model predicted value and the real value is not very good. It can only predict the approximate trend of precipitation. Its performance is quite similar with the baseline model.</h5>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" id="rf_precipitation" style="height:350px"></div>
+                        </div>
+						<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 40px; border-color: lightgray">
+                    </div>
+                    </div>
+				</div>
+            </section>
+            <!-- END SERVICES -->
+            <!-- BEGIN FOOTER -->
+            <footer>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright &copy; 2023. Comparative Analysis of Machine Learning and Deep Learning Algorithms for Weather Forecasting.</p>                        
+                    </div>
+                </div>
+            </footer>
+            <!-- END FOOTER -->
+        </div>
+    </div>
+	
+    <!-- Back to top -->
+    <div id="backtotop">       
+        <a class="to-top-btn sscroll" href="index.html#home"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+
+	<script>   
+		function saveText()  { 
+		  var strHTML1= document.getElementById("wenben1").value;//获取内容
+		  var strHTML2= document.getElementById("wenben2").value;
+		  var strHTML3= document.getElementById("wenben3").value;
+		  var strHTML4= document.getElementById("wenben4").value;//获取内容
+		  var strHTML5= document.getElementById("wenben5").value;
+		  var strHTML6= document.getElementById("wenben6").value;
+
+		  var winSave=window.open();  
+		  winSave.document.open("text","gb2312");  
+		  winSave.document.write(strHTML1+","+strHTML2+","+strHTML3+","+strHTML4+","+strHTML5+","+strHTML6);  
+		  winSave.document.execCommand("SaveAs",true,"newfile.txt");
+		  window.location.href="#"  ;
+		  winSave.close();   
+		}   
+	</script>
+</body>
+
+</html>

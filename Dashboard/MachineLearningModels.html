@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WeatherForecasting</title>
+	
+    <!--Library Styles-->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/font-awesome.css" rel="stylesheet">
+    <link href="css/lib/nivo-lightbox.css" rel="stylesheet">
+    <link href="css/lib/nivo-themes/default/default.css" rel="stylesheet">
+	
+    <!-- Template styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/scheme/purple.css" rel="stylesheet">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/rem.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/index2.js"></script>
+</head>
+
+<body data-spy="scroll">
+
+    <div id="main-wrapper">
+        
+        <!-- Site Navigation -->
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a class="sscroll" href="MainPage.html#home" style="padding-top: 50px; padding-bottom: 30px; font-weight: 700; font-size: 20px">Home</a></li>
+                      <li><a class="sscroll" href="MainPage.html">Dataset</a></li>
+						<li><a class="sscroll" href="MainPage.html#services">Algorithm</a></li>
+						<li><a class="sscroll" style="letter-spacing: 0px; padding-right: 0px; margin-left: 16px; padding-top: 0px; padding-bottom: 10px" href="MainPage.html#services" >Machine Learning </a></li>
+						<li><a class="sscroll" href="ActionsAndDomains.html" style="letter-spacing: 0px; padding-right: 0px; margin-left: 16px;  padding-top: 0px; padding-bottom: 0px">Neural Network</a></li>
+						
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+        
+        <div id="container">
+            <!-- BEGIN SERVICES -->
+            <section id="services" class="services">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+							<h2 style="font-weight: 400">Machine Learning Algorithms</h2>
+							<div style="height: 25px"></div>
+							<h5 style="line-height: 20px">This section shows the performance of machine learning models in predicting the mean temperature and precipitation in 2020. The predicted result and the actual result is shown in line chart.</h5>
+							<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 40px; border-color:lightgray">
+                        </div>
+                    </div>
+					
+					<div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6 col-xs-12">
+								<h2 style="font-weight: 300; padding-bottom: 20px; padding-top: 50px">Machine Learning Models</h2>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" style="margin-bottom: -20px">
+								<h3>* Mean squared errors of the three models using cross validation method</h3>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="service" style="height: 140px">
+									<h3 align="left" style="margin-left: 13px; margin-bottom: 0px">Linear Regression</h3>
+									<h4 align="left" style="margin-left: 13px; margin-bottom: 20px">The MSE of predicting mean_temp: 16.835<br>The MSE of predicting precipitation: 11.751</h4>
+									<a href="MachineLearningModels.html#baseline" style="margin-right: 260px">Learn More</a>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="service" style="height: 140px">
+									<h3 align="left" style="margin-left: 13px; margin-bottom: 0px">Support Vector Regression</h3>
+									<h4 align="left" style="margin-left: 13px; margin-bottom: 20px">The MSE of predicting mean_temp: 14.664<br>The MSE of predicting precipitation: 12.808</h4>
+									<a href="SVR.html" style="margin-right: 260px">Learn More</a>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="service" style="height: 140px">
+									<h3 align="left" style="margin-left: 13px; margin-bottom: 0px">Random Forest Regression</h3>
+									<h4 align="left" style="margin-left: 13px; margin-bottom: 20px">The MSE of predicting mean_temp: 15.412<br>The MSE of predicting precipitation: 11.425</h4>
+									<a href="RandomForest.html" style="margin-right: 260px">Learn More</a>
+								</div>
+							</div>
+                        </div>
+						<h5 style="line-height: 20px">From the MSE of the three models, it can be seen that the performances of the two models in predicting the mean_temp and precipitation are quite similar. The MSE of mean_temp is around 15 and the MSE of precipitation is relatively better and is around 12.</h5>
+						<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 50px; border-color: lightgray">
+                    </div>
+					
+					<div class="col-md-12", id="baseline">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6 col-xs-12">
+								<h2 style="font-weight: 300; padding-bottom: 20px; padding-top: 50px">Baseline Model</h2>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12">
+								<h3>* The baseline model used in this project is linear regression model</h3>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 200px">
+								<h5 style="line-height: 20px">In this weather prediction project, the baseline model is a linear regression model.<br/><br/><strong>The MSE of mean_temp prediction of linear regression model is 16.697</strong><br><strong>The MSE of precipitation prediction of linear regression model is 11.626</strong><br><br>The main role of the Baseline model is to serve as a benchmark or reference point for evaluating the performance of other more complex models. It helps determine baseline performance for a problem, guides model selection, and detects overfitting. It helps ensure that more complex models actually provide meaningful improvements.<br/><br/><br></h5>
+							</div>
+                        </div>
+                    </div>
+					
+					<div class="col-md-12">
+                        <div class="row">
+							<div class="col-md-12 col-sm-6 col-xs-12" style="margin-top: 50px">
+								<h3>* Mean_temp Forecast for 2020</h3>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 150px">
+								<h5 style="line-height: 20px">The picture below is the comparison between the predicted value and the actual value of mean_temp in 2020<br/><br/>As can be seen from the image, the fitting effect between the model predicted value and the real value is not very good. It can only predict the approximate trend of temperature.</h5>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" id="linear_regression_mean_temp" style="height:350px"></div>
+                        </div>
+						<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 40px; border-color: lightgray">
+                    </div>
+					
+					<div class="col-md-12">
+                        <div class="row">
+							<div class="col-md-12 col-sm-6 col-xs-12" style="margin-top: 50px">
+								<h3>* Precipitation Forecast in 2020</h3>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 150px">
+								<h5 style="line-height: 20px">The picture below is the comparison between the predicted value and the actual value of precipitation in 2020<br/><br/>As can be seen from the image, the fitting effect between the model predicted value and the real value is not very good. It can only predict the approximate trend of precipitation.</h5>
+							</div>
+							<div class="col-md-12 col-sm-6 col-xs-12" id="linear_regression_precipitation" style="height:350px"></div>
+                        </div>
+						<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 40px; border-color: lightgray">
+                    </div>
+				</div>
+            </section>
+            <!-- END SERVICES -->
+            
+            <!-- BEGIN FOOTER -->
+            <footer>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright &copy; 2023. Comparative Analysis of Machine Learning and Deep Learning Algorithms for Weather Forecasting.</p>                        
+                    </div>
+                </div>
+            </footer>
+            <!-- END FOOTER -->
+        </div>
+    </div>
+	
+    <!-- Back to top -->
+    <div id="backtotop">       
+        <a class="to-top-btn sscroll" href="index.html#home"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+
+	<script>   
+		function saveText()  { 
+		  var strHTML1= document.getElementById("wenben1").value;//获取内容
+		  var strHTML2= document.getElementById("wenben2").value;
+		  var strHTML3= document.getElementById("wenben3").value;
+		  var strHTML4= document.getElementById("wenben4").value;//获取内容
+		  var strHTML5= document.getElementById("wenben5").value;
+		  var strHTML6= document.getElementById("wenben6").value;
+
+		  var winSave=window.open();  
+		  winSave.document.open("text","gb2312");  
+		  winSave.document.write(strHTML1+","+strHTML2+","+strHTML3+","+strHTML4+","+strHTML5+","+strHTML6);  
+		  winSave.document.execCommand("SaveAs",true,"newfile.txt");
+		  window.location.href="#"  ;
+		  winSave.close();   
+		}   
+	</script>
+</body>
+
+</html>
