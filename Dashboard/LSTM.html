@@ -20,7 +20,7 @@
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/rem.js"></script>
     <script src="js/echarts.min.js"></script>
-    <script src="js/index2.js"></script>
+    <script src="js/lstm.js"></script>
 </head>
 
 <body data-spy="scroll">
@@ -61,9 +61,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="header-content">
-							<h2 style="font-weight: 400">Machine Learning Algorithms</h2>
+							<h2 style="font-weight: 400">Deep Learning -- LSTM</h2>
 							<div style="height: 25px"></div>
-							<h5 style="line-height: 20px">This section shows the performance of machine learning models in predicting the mean temperature and precipitation in 2020. The predicted result and the actual result is shown in line chart.</h5>
+							<h5 style="line-height: 20px">This section shows the performance of LSTM model of neural network algorithm in predicting the mean temperature and precipitation in 2020. The predicted result and the actual result is shown in line chart.</h5>
 							<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 40px; border-color:lightgray">
                         </div>
                     </div>
@@ -71,16 +71,16 @@
 					<div class="col-md-12">
                         <div class="row">
                             <div class="col-md-12 col-sm-6 col-xs-12">
-								<h2 style="font-weight: 300; padding-bottom: 20px; padding-top: 50px">Machine Learning Models</h2>
+								<h2 style="font-weight: 300; padding-bottom: 20px; padding-top: 50px">Neural Network</h2>
 							</div>
 							<div class="col-md-12 col-sm-6 col-xs-12" style="margin-bottom: -20px">
-								<h3>* Mean squared errors of the three models using cross validation method</h3>
+								<h3>* Comparison between machine learning model and LSTM model</h3>
 							</div>
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="service" style="height: 140px">
-									<h3 align="left" style="margin-left: 13px; margin-bottom: 0px">Linear Regression</h3>
-									<h4 align="left" style="margin-left: 13px; margin-bottom: 20px">The MSE of predicting mean_temp: 16.835<br>The MSE of predicting precipitation: 11.751</h4>
-									<a href="MachineLearningModels.html#baseline" style="margin-right: 260px">Learn More</a>
+									<h3 align="left" style="margin-left: 13px; margin-bottom: 0px">LSTM Algorithm</h3>
+									<h4 align="left" style="margin-left: 13px; margin-bottom: 20px">The MSE of predicting mean_temp: 5.589<br>The MSE of predicting precipitation: 9.829</h4>
+									<a href="LSTM.html#baseline" style="margin-right: 260px">Learn More</a>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-6 col-xs-12">
@@ -98,20 +98,20 @@
 								</div>
 							</div>
                         </div>
-						<h5 style="line-height: 20px">From the MSE of the three models, it can be seen that the performances of the two models in predicting the mean_temp and precipitation are quite similar. The MSE of mean_temp is around 15 and the MSE of precipitation is relatively better and is around 12.</h5>
+						<h5 style="line-height: 20px">From the above comparison, it can be found that the performance of the LSTM algorithm in predicting temperature and precipitation is much better than that of the machine learning algorithm, especially in predicting temperature.</h5>
 						<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 50px; border-color: lightgray">
                     </div>
 					
 					<div class="col-md-12", id="baseline">
                         <div class="row">
                             <div class="col-md-12 col-sm-6 col-xs-12">
-								<h2 style="font-weight: 300; padding-bottom: 20px; padding-top: 50px">Baseline Model</h2>
+								<h2 style="font-weight: 300; padding-bottom: 20px; padding-top: 50px">Deep Learning</h2>
 							</div>
 							<div class="col-md-12 col-sm-6 col-xs-12">
-								<h3>* The baseline model used in this project is linear regression model</h3>
+								<h3>* The performance of LSTM in predicting mean_temp and precipitation</h3>
 							</div>
-							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 200px">
-								<h5 style="line-height: 20px">In this weather prediction project, the baseline model is a linear regression model.<br/><br/><strong>The MSE of mean_temp prediction of linear regression model is 16.697</strong><br><strong>The MSE of precipitation prediction of linear regression model is 11.626</strong><br><br>The main role of the Baseline model is to serve as a benchmark or reference point for evaluating the performance of other more complex models. It helps determine baseline performance for a problem, guides model selection, and detects overfitting. It helps ensure that more complex models actually provide meaningful improvements.<br/><br/><br></h5>
+							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 100px">
+								<h5 style="line-height: 20px"><strong>The MSE of mean_temp prediction of LSTM is 5.589</strong><br><strong>The MSE of precipitation prediction of linear regression model is 9.626</strong><br/><br></h5>
 							</div>
                         </div>
                     </div>
@@ -122,9 +122,9 @@
 								<h3>* Mean_temp Forecast for 2020</h3>
 							</div>
 							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 150px">
-								<h5 style="line-height: 20px">The picture below is the comparison between the predicted value and the actual value of mean_temp in 2020<br/><br/>As can be seen from the image, the fitting effect between the model predicted value and the real value is not very good. It can only predict the approximate trend of temperature.</h5>
+								<h5 style="line-height: 20px">The plot below is the comparison between the predicted value and the actual value of mean_temp in 2020<br/><br/>As can be seen from the image, the fitting effect between the model predicted value and the real value is good. It can fit the various changes of temperature.</h5>
 							</div>
-							<div class="col-md-12 col-sm-6 col-xs-12" id="linear_regression_mean_temp" style="height:350px"></div>
+							<div class="col-md-12 col-sm-6 col-xs-12" id="lstm_mean_temp" style="height:350px"></div>
                         </div>
 						<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 40px; border-color: lightgray">
                     </div>
@@ -135,9 +135,9 @@
 								<h3>* Precipitation Forecast in 2020</h3>
 							</div>
 							<div class="col-md-12 col-sm-6 col-xs-12" style="height: 150px">
-								<h5 style="line-height: 20px">The picture below is the comparison between the predicted value and the actual value of precipitation in 2020<br/><br/>As can be seen from the image, the fitting effect between the model predicted value and the real value is not very good. It can only predict the approximate trend of precipitation.</h5>
+								<h5 style="line-height: 20px">The picture below is the comparison between the predicted value and the actual value of precipitation in 2020<br/><br/>As can be seen from the figure, the fitting curve of precipitation is not as good as mean_temp, which may be because the periodicity of precipitation changes is not as good as that of temperature. Better cycle performance enables lstm to learn changes better.</h5>
 							</div>
-							<div class="col-md-12 col-sm-6 col-xs-12" id="linear_regression_precipitation" style="height:350px"></div>
+							<div class="col-md-12 col-sm-6 col-xs-12" id="lstm_precipitation" style="height:350px"></div>
                         </div>
 						<hr style="margin-bottom: 0; margin-left: -60px; margin-right: -55px; margin-top: 40px; border-color: lightgray">
                     </div>
