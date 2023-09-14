@@ -15,3 +15,5 @@ Code holds the ipynb files used to train the model.
 lstm_result holds the files showing the training and predicting result and the lstm model.
 
 result_temp holds the temp files that were got to get other results
+
+image holds the graphs of visualization
